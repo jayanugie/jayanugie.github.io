@@ -1,4 +1,6 @@
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGit, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
@@ -14,11 +16,6 @@ function App() {
               height="512"
             />
             <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-              <blockquote>
-                <p class="text-lg font-medium">
-                  “Lorem Ipsum is simply dummy text of the printing and typesetting industry.”
-                </p>
-              </blockquote>
               <figcaption class="font-medium">
                 <div class="text-sky-500 dark:text-sky-400">
                   Nugie Jaya Nugraha
@@ -26,6 +23,14 @@ function App() {
                 <div class="text-slate-700 dark:text-slate-500">
                   Frontend Developer
                 </div>
+                <section className="mt-5 flex space-x-2">
+                  <a className="border rounded  px-2" href="https://www.github.com/jayanugie" target='blank'>
+                    <FontAwesomeIcon icon={faGit} />
+                  </a>
+                  <a className="border rounded px-2" href="https://www.linkedin.com/in/jayanugie" target='blank'>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </section>
               </figcaption>
             </div>
           </figure>{" "}
