@@ -24,7 +24,7 @@ function App() {
                   Frontend Developer
                 </div>
                 <section className="mt-5 flex space-x-2">
-                  <a className="border rounded  px-2" href="https://www.github.com/jayanugie" target='blank'>
+                  <a className="border rounded px-2" href="https://www.github.com/jayanugie" target='blank'>
                     <FontAwesomeIcon icon={faGit} />
                   </a>
                   <a className="border rounded px-2" href="https://www.linkedin.com/in/jayanugie" target='blank'>
