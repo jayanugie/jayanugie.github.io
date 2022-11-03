@@ -41,9 +41,10 @@
 
 html {
   background-color: #010225;
+  /* overflow-y: hidden; */
 }
 
 .username img {
   width: 25px;
-  
 }
+
