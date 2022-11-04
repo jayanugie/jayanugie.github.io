@@ -40,7 +40,7 @@
 
 
 html {
-  background-color: #010225;
+  background-image: linear-gradient(to bottom right, rgb(26, 15, 87), rgb(0, 0, 0));;
   /* overflow-y: hidden; */
 }
 

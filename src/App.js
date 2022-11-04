@@ -1,4 +1,10 @@
-import { faWhatsapp, faLinkedin, faGit } from "@fortawesome/free-brands-svg-icons";
+import {
+  faWhatsapp,
+  faLinkedin,
+  faGit,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
 
@@ -43,8 +49,11 @@ function App() {
             </div>
           </div>
           <div className="basis-2/6 text-right">
-            <a href="#whwatsapp">
-              <FontAwesomeIcon icon={faWhatsapp} />
+            <a href="https://wa.me/+6285163575313" target="blank">
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                className="cursor-pointer h-4 hover:h-5"
+              />
             </a>
           </div>
         </div>
@@ -52,7 +61,7 @@ function App() {
 
       {/* home page */}
       <div id="home">
-        <div className="container mx-auto lg:px-48 md:px-0">
+        <div className="container mx-auto lg:px-64 md:px-0">
           <div className="mt-3 rounded-lg bg-sky-900">
             <img
               alt="cover"
@@ -65,41 +74,63 @@ function App() {
                 <img
                   alt="profile"
                   src="profile.jpeg"
-                  className="rounded-full h-32 border-2 border-b-white"
+                  className="rounded-full h-32 border-2 border-sky-900"
                 />
                 <div className="ml-3 mt-14">
-                  <p className="font-bold">Nugie Jaya Nugraha</p>
-                  <p className="text-xs italic">Frontned Developer</p>
+                  <p className="font-bold text-lg">Nugie Jaya Nugraha</p>
+                  <p className="text-sm italic">Frontned Developer</p>
                 </div>
               </div>
             </div>
-            
+
             {/* link */}
             <div className="relative">
               <div className="absolute right-10 bottom-24">
-                <FontAwesomeIcon icon={faLinkedin} className="cursor-pointer mx-4 h-5"/>
-                <FontAwesomeIcon icon={faGit} className="cursor-pointer h-5" />
+                <a
+                  href="mailto:jayanugie14@gmail.com"
+                  className="mr-4"
+                  target="blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="cursor-pointer h-5 hover:h-6"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/jayanugie/"
+                  className="mr-4"
+                  target="blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="cursor-pointer h-5 hover:h-6"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jayanugie/"
+                  className="mr-4"
+                  target="blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="cursor-pointer h-5 hover:h-6"
+                  />
+                </a>
+                <a href="https://github.com/jayanugie" target="blank">
+                  <FontAwesomeIcon
+                    icon={faGit}
+                    className="cursor-pointer h-5 hover:h-6"
+                  />
+                </a>
               </div>
             </div>
 
-            {/* skills */}
+            {/* About */}
             <div className="ml-14">
-              <p className="font-bold">Skills</p>
-              <div className="flex w-96 mt-1 text-center">
-                <p className="flex-auto rounded-lg mx-1 p-2 text-xs bg-gray-800">JavaScript</p>
-                <p className="flex-auto rounded-lg mx-1 p-2 text-xs bg-gray-800">ReactJS</p>
-                <p className="flex-auto rounded-lg mx-1 p-2 text-xs bg-gray-800">NextJS</p>
-                <p className="flex-auto rounded-lg mx-1 p-2 text-xs bg-gray-800">PostgreSQL</p>
-                <p className="flex-auto rounded-lg mx-1 p-2 text-xs bg-gray-800">Tailwind</p>
-              </div>
+              <p className="font-bold">About</p>
             </div>
 
             {/* others */}
-            <div className="ml-14 mt-10">
-              <p>in processing</p>
-            </div>
-
-
           </div>
         </div>
       </div>
