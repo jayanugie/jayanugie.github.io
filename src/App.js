@@ -13,7 +13,7 @@ function App() {
     <div className="text-white">
       {/* navbar */}
       <div className="p-3 bg-sky-900 sticky top-0">
-        <div className="container mx-auto lg:px-20 md:px-0 flex flex-row">
+        <div className="container mx-auto lg:px-20 px-2 flex flex-row">
           <div className="basis-2/6">
             <div className="flex username">
               <img
@@ -60,9 +60,9 @@ function App() {
       </div>
 
       {/* home page */}
-      <div id="home">
-        <div className="container mx-auto lg:px-64 md:px-0">
-          <div className="mt-3 rounded-lg bg-sky-900">
+      <div id="#home">
+        <div className="container mx-auto lg:px-64 px-1">
+          <div className="mt-3 rounded-lg bg-card">
             <img
               alt="cover"
               src="cover.jpg"
@@ -70,67 +70,88 @@ function App() {
             />
             {/* profile, name, title */}
             <div className="relative">
-              <div className="flex relative left-12 bottom-12">
+              <div className="flex relative left-3 bottom-12">
                 <img
                   alt="profile"
                   src="profile.jpeg"
-                  className="rounded-full h-32 border-2 border-sky-900"
+                  className="rounded-full h-24 border-2 border-sky-900"
                 />
-                <div className="ml-3 mt-14">
-                  <p className="font-bold text-lg">Nugie Jaya Nugraha</p>
-                  <p className="text-sm italic">Frontned Developer</p>
+                <div className="mt-12 ml-1">
+                  <p className="font-bold text-xs">Nugie Jaya Nugraha</p>
+                  <p className="text-xs italic">Frontned Developer</p>
                 </div>
               </div>
             </div>
 
             {/* link */}
             <div className="relative">
-              <div className="absolute right-10 bottom-24">
+              <div className="absolute right-10 bottom-16">
                 <a
                   href="mailto:jayanugie14@gmail.com"
-                  className="mr-4"
+                  className="mr-2"
                   target="blank"
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="cursor-pointer h-5 hover:h-6"
+                    className="cursor-pointer h-4 hover:h-5"
                   />
                 </a>
                 <a
                   href="https://www.instagram.com/jayanugie/"
-                  className="mr-4"
+                  className="mr-2"
                   target="blank"
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    className="cursor-pointer h-5 hover:h-6"
+                    className="cursor-pointer h-4 hover:h-5"
                   />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/jayanugie/"
-                  className="mr-4"
+                  className="mr-2"
                   target="blank"
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="cursor-pointer h-5 hover:h-6"
+                    className="cursor-pointer h-4 hover:h-5"
                   />
                 </a>
                 <a href="https://github.com/jayanugie" target="blank">
                   <FontAwesomeIcon
                     icon={faGit}
-                    className="cursor-pointer h-5 hover:h-6"
+                    className="cursor-pointer h-4 hover:h-5"
                   />
                 </a>
               </div>
             </div>
 
             {/* About */}
-            <div className="ml-14">
-              <p className="font-bold">About</p>
+            <div className="mx-6" id="#about">
+              <div className="px-5 rounded-lg text-center">
+                <p className="font-bold font-title text-4xl">About me</p>
+                <p className="text-xs font-thin">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <div className="m-5 bg-sky-900 p-1 rounded-md px-3">
+                  <button className="text-sm">Contact me</button>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            {/* others */}
+      <div id="#projects">
+        <div className="container mx-auto lg:px-64 px-1">
+          <div className="mt-3 rounded-lg bg-card p-5">
+            <p className="text-4xl font-bold font-title">Projects</p>
+            <div>{/* carousel */}</div>
           </div>
         </div>
       </div>

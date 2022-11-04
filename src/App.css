@@ -48,3 +48,11 @@ html {
   width: 25px;
 }
 
+.bg-card {
+  background-image: linear-gradient(to bottom left, rgb(34, 11, 84), rgb(0, 0, 0));;
+  /* overflow-y: hidden; */
+}
+
+.font-title {
+  font-family: 'Raleway', sans-serif;
+}
