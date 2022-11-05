@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="text-white">
       {/* navbar */}
-      <div className="p-3 bg-sky-900 sticky top-0">
+      <div className="p-3 bg-sky-900">
         <div className="container mx-auto lg:px-20 px-2 flex flex-row">
           <div className="basis-2/6">
             <div className="flex username">
@@ -61,7 +61,7 @@ function App() {
 
       {/* home page */}
       <div id="#home">
-        <div className="container mx-auto lg:px-64 px-1">
+        <div className="container mx-auto lg:px-56 px-1">
           <div className="mt-3 rounded-lg bg-card">
             <img
               alt="cover"
@@ -70,56 +70,56 @@ function App() {
             />
             {/* profile, name, title */}
             <div className="relative">
-              <div className="flex relative left-3 bottom-12">
+              <div className="flex relative left-3 bottom-12 lg:left-12">
                 <img
                   alt="profile"
                   src="profile.jpeg"
-                  className="rounded-full h-24 border-2 border-sky-900"
+                  className="rounded-full h-24 lg:h-32 border-2 border-sky-900"
                 />
-                <div className="mt-12 ml-1">
-                  <p className="font-bold text-xs">Nugie Jaya Nugraha</p>
-                  <p className="text-xs italic">Frontned Developer</p>
+                <div className="mt-12 ml-1 lg:mt-14 lg:ml-3">
+                  <p className="font-bold text-xs lg:text-lg">Nugie Jaya Nugraha</p>
+                  <p className="text-xs lg:text-sm italic">Frontned Developer</p>
                 </div>
               </div>
             </div>
 
             {/* link */}
             <div className="relative">
-              <div className="absolute right-10 bottom-16">
+              <div className="absolute right-10 bottom-16 lg:bottom-20">
                 <a
                   href="mailto:jayanugie14@gmail.com"
-                  className="mr-2"
+                  className="mr-2 lg:mr-4"
                   target="blank"
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="cursor-pointer h-4 hover:h-5"
+                    className="cursor-pointer h-4 hover:h-5 lg:h-6 lg:hover:h-7"
                   />
                 </a>
                 <a
                   href="https://www.instagram.com/jayanugie/"
-                  className="mr-2"
+                  className="mr-2 lg:mr-4"
                   target="blank"
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    className="cursor-pointer h-4 hover:h-5"
+                    className="cursor-pointer h-4 hover:h-5 lg:h-6 lg:hover:h-7"
                   />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/jayanugie/"
-                  className="mr-2"
+                  className="mr-2 lg:mr-4"
                   target="blank"
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="cursor-pointer h-4 hover:h-5"
+                    className="cursor-pointer h-4 hover:h-5 lg:h-6 lg:hover:h-7"
                   />
                 </a>
                 <a href="https://github.com/jayanugie" target="blank">
                   <FontAwesomeIcon
                     icon={faGit}
-                    className="cursor-pointer h-4 hover:h-5"
+                    className="cursor-pointer h-4 hover:h-5 lg:h-6 lg:hover:h-7"
                   />
                 </a>
               </div>
@@ -127,9 +127,9 @@ function App() {
 
             {/* About */}
             <div className="mx-6" id="#about">
-              <div className="px-5 rounded-lg text-center">
-                <p className="font-bold font-title text-4xl">About me</p>
-                <p className="text-xs font-thin">
+              <div className="px-5 lg:px-16 rounded-lg text-center">
+                <p className="font-bold font-title text-4xl lg:text-6xl">About me</p>
+                <p className="text-xs lg:text-sm font-thin">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -147,10 +147,10 @@ function App() {
         </div>
       </div>
 
-      <div id="#projects">
-        <div className="container mx-auto lg:px-64 px-1">
+      <div id="#projects" className=" h-96">
+        <div className="container mx-auto lg:px-56 px-1">
           <div className="mt-3 rounded-lg bg-card p-5">
-            <p className="text-4xl font-bold font-title">Projects</p>
+            <p className="text-4xl lg:text-6xl font-bold font-title">Projects</p>
             <div>{/* carousel */}</div>
           </div>
         </div>
