@@ -7,6 +7,7 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
+import { Carousel } from "flowbite-react";
 
 function App() {
   return (
@@ -77,8 +78,12 @@ function App() {
                   className="rounded-full h-24 lg:h-32 border-2 border-sky-900"
                 />
                 <div className="mt-12 ml-1 lg:mt-14 lg:ml-3">
-                  <p className="font-bold text-xs lg:text-lg">Nugie Jaya Nugraha</p>
-                  <p className="text-xs lg:text-sm italic">Frontned Developer</p>
+                  <p className="font-bold text-xs lg:text-lg">
+                    Nugie Jaya Nugraha
+                  </p>
+                  <p className="text-xs lg:text-sm italic">
+                    Frontned Developer
+                  </p>
                 </div>
               </div>
             </div>
@@ -128,7 +133,9 @@ function App() {
             {/* About */}
             <div className="mx-6" id="#about">
               <div className="px-5 lg:px-16 rounded-lg text-center">
-                <p className="font-bold font-title text-4xl lg:text-6xl">About me</p>
+                <p className="font-bold font-title text-4xl lg:text-6xl">
+                  About me
+                </p>
                 <p className="text-xs lg:text-sm font-thin">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -150,8 +157,30 @@ function App() {
       <div id="#projects" className=" h-96">
         <div className="container mx-auto lg:px-56 px-1">
           <div className="mt-3 rounded-lg bg-card p-5">
-            <p className="text-4xl lg:text-6xl font-bold font-title">Projects</p>
-            <div>{/* carousel */}</div>
+            <p className="text-4xl lg:text-6xl font-bold font-title">
+              Projects
+            </p>
+            <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 m-3">
+              <Carousel>
+                <img src="cover.jpg" alt="..." />
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                  alt="..."
+                />
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+                  alt="..."
+                />
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
+                  alt="..."
+                />
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+                  alt="..."
+                />
+              </Carousel>
+            </div>
           </div>
         </div>
       </div>
