@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="text-white">
       {/* navbar */}
-      <div className="p-3 bg-sky-900">
+      <div className="p-3 bg-transparent">
         <div className="container mx-auto lg:px-20 px-2 flex flex-row">
           <div className="basis-2/6">
             <div className="flex username">
@@ -210,7 +210,7 @@ function App() {
                 <div className="mt-8 flex justify-center">
                   <a href="https://wa.me/+6285163575313" target="blank">
                     <button className="text-sm bg-green-500 hover:bg-green-400 p-2 rounded-lg">
-                      Direct Whatsapp
+                      <FontAwesomeIcon icon={faWhatsapp}/> Direct Whatsapp
                     </button>
                   </a>
                 </div>
