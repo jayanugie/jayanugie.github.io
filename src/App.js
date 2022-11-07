@@ -61,7 +61,7 @@ function App() {
       </div>
 
       {/* home page */}
-      <div id="#home">
+      <div id="home">
         <div className="container mx-auto lg:px-56 px-1">
           <div className="mt-3 rounded-lg bg-card">
             <img
@@ -131,7 +131,7 @@ function App() {
             </div>
 
             {/* About */}
-            <div className="mx-6" id="#about">
+            <div className="mx-6" id="about">
               <div className="px-5 lg:px-16 rounded-lg text-center">
                 <p className="font-bold font-title text-4xl lg:text-6xl">
                   About me
@@ -147,7 +147,9 @@ function App() {
               <div className="flex justify-center">
                 <div className="m-5">
                   <a href="#contact">
-                    <button className="text-sm py-1 px-3 rounded-md bg-sky-900  hover:bg-sky-800">Contact me</button>
+                    <button className="text-sm py-1 px-3 rounded-md bg-sky-900  hover:bg-sky-800">
+                      Contact me
+                    </button>
                   </a>
                 </div>
               </div>
@@ -157,7 +159,7 @@ function App() {
       </div>
 
       {/* projects */}
-      <div id="#projects">
+      <div id="projects">
         <div className="container mx-auto lg:px-56 px-1">
           <div className="mt-3 rounded-lg bg-card p-5">
             <p className="text-4xl lg:text-6xl font-bold font-title">
@@ -206,7 +208,11 @@ function App() {
                   <img src="arrow.png" alt="arrow" />
                 </div>
                 <div className="mt-8 flex justify-center">
-                  <button className="text-sm bg-green-500 hover:bg-green-400 p-2 rounded-lg">Direct Whatsapp</button>
+                  <a href="https://wa.me/+6285163575313" target="blank">
+                    <button className="text-sm bg-green-500 hover:bg-green-400 p-2 rounded-lg">
+                      Direct Whatsapp
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="basis-2/3 p-10">
@@ -238,12 +244,24 @@ function App() {
                       rows={4}
                     />
                   </div>
-                  <button className="bg-sky-900 py-2 rounded-lg hover:bg-sky-800" type="submit">Submit</button>
+                  <button
+                    className="bg-sky-900 py-2 rounded-lg hover:bg-sky-800"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* footer */}
+      <div className="border-t border-slate-700 mt-5 mb-2">
+        <p className="text-center text-sm m-1 text-slate-700">
+          Copyright &copy;2022 jayanugie
+        </p>
       </div>
     </div>
   );
