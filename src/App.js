@@ -7,7 +7,7 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
-import { Carousel } from "flowbite-react";
+import { Carousel, TextInput, Textarea } from "flowbite-react";
 
 function App() {
   return (
@@ -145,8 +145,10 @@ function App() {
                 </p>
               </div>
               <div className="flex justify-center">
-                <div className="m-5 bg-sky-900 p-1 rounded-md px-3">
-                  <button className="text-sm">Contact me</button>
+                <div className="m-5">
+                  <a href="#contact">
+                    <button className="text-sm py-1 px-3 rounded-md bg-sky-900  hover:bg-sky-800">Contact me</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -154,7 +156,8 @@ function App() {
         </div>
       </div>
 
-      <div id="#projects" className=" h-96">
+      {/* projects */}
+      <div id="#projects">
         <div className="container mx-auto lg:px-56 px-1">
           <div className="mt-3 rounded-lg bg-card p-5">
             <p className="text-4xl lg:text-6xl font-bold font-title">
@@ -180,6 +183,64 @@ function App() {
                   alt="..."
                 />
               </Carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* contact */}
+      <div id="contact">
+        <div className="container mx-auto lg:px-56 px-1">
+          <div className="mt-3 rounded-lg bg-card p-5">
+            <div className="flex flex-col lg:flex-row ">
+              <div className="basis-1/3 lg:p-10 text-center">
+                <p className="text-4xl lg:text-4xl font-bold font-title">
+                  Contact me
+                </p>
+                <p className="mt-3">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="hidden lg:flex justify-center mt-5 -rotate-6">
+                  <img src="arrow.png" alt="arrow" />
+                  <img src="arrow.png" alt="arrow" />
+                </div>
+                <div className="mt-8 flex justify-center">
+                  <button className="text-sm bg-green-500 hover:bg-green-400 p-2 rounded-lg">Direct Whatsapp</button>
+                </div>
+              </div>
+              <div className="basis-2/3 p-10">
+                <form className="flex flex-col gap-4">
+                  <div>
+                    <TextInput
+                      className="mb-2 block"
+                      id="email"
+                      type="email"
+                      placeholder="Your email"
+                      required={true}
+                    />
+                  </div>
+                  <div>
+                    <TextInput
+                      className="mb-2 block"
+                      id="name"
+                      type="text"
+                      placeholder="Your name"
+                      required={true}
+                    />
+                  </div>
+                  <div id="textarea">
+                    <Textarea
+                      className="mb-2 block"
+                      id="comment"
+                      placeholder="Leave your message ..."
+                      required={true}
+                      rows={4}
+                    />
+                  </div>
+                  <button className="bg-sky-900 py-2 rounded-lg hover:bg-sky-800" type="submit">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
