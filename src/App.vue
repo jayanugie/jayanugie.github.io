@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-bg-primary">
     <SiteNavigation />
     <RouterView />
   </div>
