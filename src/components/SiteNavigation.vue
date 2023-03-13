@@ -24,7 +24,7 @@
 
   <aside
     id="default-sidebar"
-    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 border-r border-border-color"
     aria-label="Sidebar"
   >
     <div class="h-full px-3 py-4 overflow-y-auto bg-bg-navbar">
@@ -36,7 +36,7 @@
           >
             <img
               src="/img/nugie.jpg"
-              class="flex-shrink-0 w-6 h-6 rounded-full object-cover"
+              class="flex-shrink-0 w-8 h-8 rounded-full object-cover"
               xmlns="http://www.w3.org/2000/svg"
             />
             <div class="ml-3">
@@ -45,7 +45,6 @@
             </div>
           </router-link>
         </li>
-        <hr class="border- border-text-secondary" />
         <li class="pt-5">
           <router-link
             to="/"
@@ -194,7 +193,7 @@
         </li>
         <li>
           <a
-            href="https://wa.me/6282297718123?text=Hello%20there!"
+            href="https://wa.me/6285163575313?text=Hello%20there!"
             target="_blank"
             class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
           >

@@ -14,6 +14,7 @@ module.exports = {
         "hover-navbar": "#2b2b2b",
         "text-primary": "#f2f2f2",
         "text-secondary": "#7b7b7b",
+        "border-color": "#E8E8E817",
       },
     },
   },
