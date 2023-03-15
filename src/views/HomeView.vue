@@ -149,7 +149,7 @@
               class="basis-3/4 rounded-lg bg-bg-navbar placeholder:text-text-secondary text-text-primary border-none focus:ring-0"
             />
             <button
-              class="basis-1/4 bg-bg-navbar p-1 text-text-primary font-medium"
+              class="basis-1/4 bg-bg-navbar p-1 text-text-primary font-medium rounded-lg"
             >
               Subscribe
             </button>

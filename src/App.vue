@@ -1,7 +1,7 @@
 <template>
   <div class="bg-bg-primary">
     <SiteNavigation />
-    <RouterView />
+    <RouterView class="min-h-[100vh]" />
   </div>
 </template>
 
