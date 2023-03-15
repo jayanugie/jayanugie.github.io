@@ -97,7 +97,7 @@
           <div class="flex space-x-3">
             <img src="/img/phone.jpg" alt="stack" class="w-10 rounded-lg" />
             <div class="text-sm">
-              <p class="text-text-primary">Stack</p>
+              <p class="text-text-primary font-medium">Stack</p>
               <p class="text-text-secondary">Description</p>
             </div>
           </div>
@@ -106,7 +106,7 @@
           <div class="flex space-x-3">
             <img src="/img/phone.jpg" alt="stack" class="w-10 rounded-lg" />
             <div class="text-sm">
-              <p class="text-text-primary">Stack</p>
+              <p class="text-text-primary font-medium">Stack</p>
               <p class="text-text-secondary">Description</p>
             </div>
           </div>
@@ -115,7 +115,7 @@
           <div class="flex space-x-3">
             <img src="/img/phone.jpg" alt="stack" class="w-10 rounded-lg" />
             <div class="text-sm">
-              <p class="text-text-primary">Stack</p>
+              <p class="text-text-primary font-medium">Stack</p>
               <p class="text-text-secondary">Description</p>
             </div>
           </div>
