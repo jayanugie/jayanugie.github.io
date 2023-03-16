@@ -13,7 +13,7 @@
         </p>
         <div class="space-x-4 flex font-medium">
           <button
-            class="pt-1 pb-2 px-3 border border-border-color bg-hover-navbar rounded-lg"
+            class="pt-1 pb-2 px-3 border border-border-color bg-bg-navbar rounded-lg"
           >
             Contact
           </button>

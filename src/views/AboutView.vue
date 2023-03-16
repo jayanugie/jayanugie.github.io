@@ -29,7 +29,7 @@
         <div class="space-x-4 flex font-medium text-text-primary">
           <router-link
             to="/contact"
-            class="pt-1 pb-2 px-3 border border-border-color bg-hover-navbar rounded-lg"
+            class="pt-1 pb-2 px-3 border border-border-color bg-bg-navbar rounded-lg"
           >
             Get in touch
           </router-link>
