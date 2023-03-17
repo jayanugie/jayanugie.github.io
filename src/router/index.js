@@ -4,6 +4,7 @@ import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
 import ProjectsView from "../views/ProjectsView.vue";
 import StackView from "../views/StackView.vue";
+import ProjectView from "../views/ProjectView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/projects",
       name: "projects",
       component: ProjectsView,
+    },
+    {
+      path: "/projects/:name",
+      name: "project",
+      component: ProjectView,
     },
     {
       path: "/stack",
