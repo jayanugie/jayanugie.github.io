@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "LOREM",
+      "image": "/img/phone.jpg",
+      "description": "LOREM",
+      "text": "LOREM",
+      "link": "https://www.google.com"
+    },
+    {
+      "id": 2,
+      "title": "IPSUM",
+      "image": "/img/phone.jpg",
+      "description": "IPSUM",
+      "text": "IPSUM",
+      "link": "https://www.google.com"
+    }
+  ]
+}

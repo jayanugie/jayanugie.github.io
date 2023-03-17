@@ -1,6 +1,6 @@
 <template>
-  <div class="sm:ml-64 min-h-[100vh]">
-    <div class="xl:px-80 lg:px-32 md:px-28 px-10 md:pt-24 pt-10">
+  <div class="sm:ml-64">
+    <div class="xl:px-80 lg:px-32 md:px-28 px-10 md:pt-24 pt-10 min-h-[80vh]">
       <!-- CONTENT -->
       <div class="space-y-6">
         <p class="text-text-primary text-4xl font-semibold">About Nugie</p>
@@ -50,7 +50,6 @@
 
 <script>
 import Footer from "../components/Footer.vue";
-import { RouterLink } from "vue-router";
 
 export default {
   components: {

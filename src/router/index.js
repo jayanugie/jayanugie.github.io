@@ -30,7 +30,7 @@ const router = createRouter({
       component: ProjectsView,
     },
     {
-      path: "/projects/:name",
+      path: "/projects/:title",
       name: "project",
       component: ProjectView,
     },

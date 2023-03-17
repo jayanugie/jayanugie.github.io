@@ -1,6 +1,6 @@
 <template>
   <div class="sm:ml-64">
-    <div class="xl:px-80 lg:px-32 md:px-28 px-10 md:pt-24 pt-10">
+    <div class="xl:px-80 lg:px-32 md:px-28 px-10 md:pt-24 pt-10 min-h-[80vh]">
       <!-- TITLE -->
       <div class="text-text-primary space-y-6">
         <p class="text-4xl font-semibold">Contact</p>
