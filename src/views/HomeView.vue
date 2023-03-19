@@ -142,14 +142,16 @@
           </div>
 
           <!-- Form Email -->
-          <div class="flex space-x-3 text-sm">
+          <div
+            class="text-sm flex max-sm:flex-col max-sm:space-y-3 sm:space-x-3"
+          >
             <input
               type="text"
               placeholder="Your email"
               class="basis-3/4 rounded-lg bg-bg-navbar placeholder:text-text-secondary text-text-primary border-none focus:ring-0"
             />
             <button
-              class="basis-1/4 bg-bg-navbar p-1 text-text-primary font-medium rounded-lg"
+              class="basis-1/4 bg-bg-navbar p-2 text-text-primary font-medium rounded-lg"
             >
               Subscribe
             </button>

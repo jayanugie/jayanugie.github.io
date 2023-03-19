@@ -32,7 +32,7 @@
         <li>
           <router-link
             to="/"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary"
           >
             <img
               src="/img/nugie.jpg"
@@ -48,7 +48,7 @@
         <li class="pt-5">
           <router-link
             to="/"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
             active-class="active"
           >
             <svg
@@ -66,7 +66,7 @@
         <li>
           <router-link
             to="/projects"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
             active-class="active"
           >
             <svg
@@ -86,7 +86,7 @@
         <li>
           <router-link
             to="/stack"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
             active-class="active"
           >
             <svg
@@ -106,7 +106,7 @@
         <li>
           <router-link
             to="/about"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
             active-class="active"
           >
             <svg
@@ -128,7 +128,7 @@
         <li>
           <router-link
             to="/contact"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
             active-class="active"
           >
             <svg
@@ -153,7 +153,7 @@
           <a
             href="https://www.linkedin.com/in/jayanugie/"
             target="_blank"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
           >
             <svg
               aria-hidden="true"
@@ -173,7 +173,7 @@
           <a
             href="https://github.com/jayanugie"
             target="_blank"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
           >
             <svg
               aria-hidden="true"
@@ -195,7 +195,7 @@
           <a
             href="https://wa.me/6285163575313?text=Hello%20there!"
             target="_blank"
-            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition-all"
+            class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
           >
             <svg
               aria-hidden="true"

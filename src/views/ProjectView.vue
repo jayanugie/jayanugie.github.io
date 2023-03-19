@@ -4,7 +4,7 @@
       <div class="space-y-6">
         <router-link
           to="/projects"
-          class="flex text-text-secondary text-sm font-medium transition-all hover:text-text-primary space-x-2 hover:space-x-3"
+          class="flex text-text-secondary text-sm font-medium transition duration-300 hover:text-text-primary space-x-2"
         >
           <svg
             aria-hidden="true"
