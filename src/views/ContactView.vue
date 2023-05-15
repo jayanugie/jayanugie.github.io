@@ -12,15 +12,26 @@
           <button
             class="pt-1 pb-2 px-3 border border-border-color bg-bg-navbar rounded-lg"
           >
-            Have a call
+            <a
+              href="https://wa.me/6282297718123"
+              target="_blank"
+              class="flex items-center space-x-1"
+            >
+              <img src="/img/whatsapp.png" class="w-5" alt="whatsapp" />
+              <span>WhatsApp</span>
+            </a>
           </button>
           <button
             class="pt-1 pb-2 px-3 border border-border-color bg-transparent rounded-lg"
           >
-            <div class="flex items-center space-x-1">
-              <img src="/img/copy.png" alt="copy" class="w-5 h-5" />
+            <a
+              href="mailto:jayanugie14@gmail.com"
+              target="_blank"
+              class="flex items-center space-x-1"
+            >
+              <img src="/img/mail.png" alt="email" class="w-5 h-5" />
               <span>Email</span>
-            </div>
+            </a>
           </button>
         </div>
       </div>

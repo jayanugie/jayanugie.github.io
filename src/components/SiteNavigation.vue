@@ -193,7 +193,7 @@
         </li>
         <li>
           <a
-            href="https://wa.me/6285163575313?text=Hello%20there!"
+            href="https://wa.me/6282297718123?text=Hello%20there!"
             target="_blank"
             class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary transition duration-300"
           >

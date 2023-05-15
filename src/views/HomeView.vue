@@ -15,69 +15,41 @@
           <button
             class="pt-1 pb-2 px-3 border border-border-color bg-bg-navbar rounded-lg"
           >
-            Contact
+            <router-link to="/contact"> Contact </router-link>
           </button>
           <button
             class="pt-1 pb-2 px-3 border border-border-color bg-transparent rounded-lg"
           >
-            <div class="flex items-center space-x-1">
-              <img src="/img/copy.png" alt="copy" class="w-5 h-5" />
+            <a
+              href="mailto:jayanugie14@gmail.com"
+              target="_blank"
+              class="flex items-center space-x-1"
+            >
+              <img src="/img/mail.png" alt="email" class="w-5 h-5" />
               <span>Email</span>
-            </div>
+            </a>
           </button>
         </div>
       </div>
 
-      <!-- WHAT'S NEW -->
+      <!-- PROJECTS -->
       <div class="mt-12 space-y-4">
-        <p class="text-text-primary font-medium p-1">What's new</p>
+        <p class="text-text-primary font-medium p-1">Projects</p>
 
-        <!-- Content 1 -->
+        <!-- loop what's new -->
         <div
+          v-for="item in projects"
+          :key="item.title"
           class="flex md:p-3 p-2 rounded-lg hover:bg-hover-navbar transition-all"
         >
           <img
-            src="/img/phone.jpg"
-            alt="phone"
+            :src="item.image"
+            :alt="item.title"
             class="md:w-56 w-32 rounded-lg object-cover"
           />
           <div class="text-sm ml-4 space-y-2">
-            <p class="text-text-primary font-medium">CyberFolio</p>
-            <p class="text-text-secondary">
-              A beautiful dark-themed personal website template.
-            </p>
-          </div>
-        </div>
-        <!-- Content 2 -->
-        <div
-          class="flex md:p-3 p-2 rounded-lg hover:bg-hover-navbar transition-all"
-        >
-          <img
-            src="/img/phone.jpg"
-            alt="phone"
-            class="md:w-56 w-32 rounded-lg object-cover"
-          />
-          <div class="text-sm ml-4 space-y-2">
-            <p class="text-text-primary font-medium">CyberFolio</p>
-            <p class="text-text-secondary">
-              A beautiful dark-themed personal website template.
-            </p>
-          </div>
-        </div>
-        <!-- Content 3 -->
-        <div
-          class="flex md:p-3 p-2 rounded-lg hover:bg-hover-navbar transition-all"
-        >
-          <img
-            src="/img/phone.jpg"
-            alt="phone"
-            class="md:w-56 w-32 rounded-lg object-cover"
-          />
-          <div class="text-sm ml-4 space-y-2">
-            <p class="text-text-primary font-medium">CyberFolio</p>
-            <p class="text-text-secondary">
-              A beautiful dark-themed personal website template.
-            </p>
+            <p class="text-text-primary font-medium">{{ item.title }}</p>
+            <p class="text-text-secondary">{{ item.description }}</p>
           </div>
         </div>
       </div>
@@ -85,55 +57,40 @@
       <!-- STACK -->
       <div class="mt-12 border border-border-color rounded-lg">
         <div class="p-6 space-y-6">
-          <!-- Title -->
           <div>
-            <p class="font-medium text-text-primary">Stack</p>
+            <p class="font-medium text-text-primary">Tech Stacks</p>
             <p class="text-text-secondary text-sm">
-              Software and resources I use regularly.
+              Language, technology, and tools I use regularly.
             </p>
           </div>
 
-          <!-- Stack 1 -->
-          <div class="flex space-x-3">
-            <img src="/img/phone.jpg" alt="stack" class="w-10 rounded-lg" />
+          <!-- loop stacks -->
+          <div
+            class="flex space-x-3"
+            v-for="item in filteredStacks"
+            :key="item.title"
+          >
+            <img :src="item.image" :alt="item.title" class="w-10 rounded-lg" />
             <div class="text-sm">
-              <p class="text-text-primary font-medium">Stack</p>
-              <p class="text-text-secondary">Description</p>
+              <p class="text-text-primary font-medium">{{ item.title }}</p>
+              <p class="text-text-secondary">{{ item.description }}</p>
             </div>
           </div>
 
-          <!-- Stack 2 -->
-          <div class="flex space-x-3">
-            <img src="/img/phone.jpg" alt="stack" class="w-10 rounded-lg" />
-            <div class="text-sm">
-              <p class="text-text-primary font-medium">Stack</p>
-              <p class="text-text-secondary">Description</p>
-            </div>
-          </div>
-
-          <!-- Stack 3 -->
-          <div class="flex space-x-3">
-            <img src="/img/phone.jpg" alt="stack" class="w-10 rounded-lg" />
-            <div class="text-sm">
-              <p class="text-text-primary font-medium">Stack</p>
-              <p class="text-text-secondary">Description</p>
-            </div>
-          </div>
-
-          <!-- All Tools -->
+          <!-- All Stack -->
           <router-link
             to="/stack"
             class="border border-border-color rounded-lg bg-bg-navbar p-2 justify-center flex text-text-primary font-medium"
           >
-            All Tools
+            All Stacks
           </router-link>
         </div>
       </div>
 
       <!-- STAY UP TO DATE -->
-      <div class="mt-12 border border-border-color rounded-lg">
+      <!-- <div class="mt-12 border border-border-color rounded-lg">
         <div class="p-6 space-y-6">
-          <!-- Title -->
+          Title
           <div>
             <p class="font-medium text-text-primary">Stay up to date</p>
             <p class="text-text-secondary text-sm">
@@ -141,7 +98,7 @@
             </p>
           </div>
 
-          <!-- Form Email -->
+          Form Email
           <div
             class="text-sm flex max-sm:flex-col max-sm:space-y-3 sm:space-x-3"
           >
@@ -157,7 +114,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <Footer />
   </div>
@@ -165,10 +122,26 @@
 
 <script>
 import Footer from "../components/Footer.vue";
+import { projects, stacks } from "../../db/db.json";
 
 export default {
   components: {
     Footer,
+  },
+  data() {
+    return {
+      projects: [],
+      stacks: [],
+    };
+  },
+  mounted() {
+    this.projects = projects;
+    this.stacks = stacks;
+  },
+  computed: {
+    filteredStacks() {
+      return this.stacks.slice(0, 3);
+    },
   },
 };
 </script>

@@ -1,7 +1,6 @@
 {
   "projects": [
     {
-      "id": 1,
       "title": "LOREM",
       "image": "/img/phone.jpg",
       "description": "LOREM",
@@ -9,12 +8,85 @@
       "link": "https://www.google.com"
     },
     {
-      "id": 2,
       "title": "IPSUM",
       "image": "/img/phone.jpg",
       "description": "IPSUM",
       "text": "IPSUM",
       "link": "https://www.google.com"
+    }
+  ],
+  "stacks": [
+    {
+      "title": "JavaScript",
+      "image": "/img/stacks/javascript.png",
+      "description": "Programming Language",
+      "link": ""
+    },
+    {
+      "title": "PHP",
+      "image": "/img/stacks/php.png",
+      "description": "Programming Language",
+      "link": ""
+    },
+    {
+      "title": "React",
+      "image": "/img/stacks/react.png",
+      "description": " Frontend JavaScript Library",
+      "link": ""
+    },
+    {
+      "title": "Vue",
+      "image": "/img/stacks/vue.png",
+      "description": "Frontend JavaScript Framework",
+      "link": ""
+    },
+    {
+      "title": "Express",
+      "image": "/img/stacks/express.png",
+      "description": "Backend Framework",
+      "link": ""
+    },
+    {
+      "title": "Bootstrap",
+      "image": "/img/stacks/bootstrap.png",
+      "description": "CSS Framework",
+      "link": ""
+    },
+    {
+      "title": "Tailwind",
+      "image": "/img/stacks/tailwind.png",
+      "description": "CSS Framework",
+      "link": ""
+    },
+    {
+      "title": "MySQL",
+      "image": "/img/stacks/mysql.png",
+      "description": "Database Management System",
+      "link": ""
+    },
+    {
+      "title": "SQL Server",
+      "image": "/img/stacks/sql-server.png",
+      "description": "Database Management System",
+      "link": ""
+    },
+    {
+      "title": "PostgreSQL",
+      "image": "/img/stacks/postgresql.png",
+      "description": "Database Management System",
+      "link": ""
+    },
+    {
+      "title": "Node",
+      "image": "/img/stacks/node.png",
+      "description": "JavaScript Runtime Environment",
+      "link": ""
+    },
+    {
+      "title": "Git",
+      "image": "/img/stacks/git.png",
+      "description": "Version Control",
+      "link": ""
     }
   ]
 }
