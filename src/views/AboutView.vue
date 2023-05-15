@@ -9,22 +9,13 @@
         </p>
         <img src="/img/nugie.jpg" alt="nugie" class="h-96 rounded-lg" />
         <p class="text-text-secondary text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-          delectus expedita voluptatem quibusdam. Beatae ducimus cum nisi sit ex
-          voluptatibus deleniti ipsam mollitia, tenetur aut nihil, ullam quam at
-          numquam!
+          {{ paragraphOne }}
         </p>
         <p class="text-text-secondary text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          possimus eius iure ratione voluptatibus suscipit animi dicta qui
-          sapiente eum sed magnam officiis, quod accusamus laboriosam libero,
-          voluptas quisquam reiciendis.
+          {{ paragraphTwo }}
         </p>
         <p class="text-text-secondary text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-          laudantium earum ut voluptate quidem magni! Maiores dolor sunt, ut
-          odit neque saepe quia fuga, ab tenetur debitis, quae reprehenderit
-          similique.
+          {{ paragraphThree }}
         </p>
         <div class="space-x-4 flex font-medium text-text-primary">
           <router-link
@@ -36,10 +27,14 @@
           <button
             class="pt-1 pb-2 px-3 border border-border-color bg-transparent rounded-lg"
           >
-            <div class="flex items-center space-x-1">
-              <img src="/img/copy.png" alt="copy" class="w-5 h-5" />
+            <a
+              href="mailto:jayanugie14@gmail.com"
+              target="_blank"
+              class="flex items-center space-x-1"
+            >
+              <img src="/img/mail.png" alt="copy" class="w-5 h-5" />
               <span>Email</span>
-            </div>
+            </a>
           </button>
         </div>
       </div>
@@ -54,6 +49,16 @@ import Footer from "../components/Footer.vue";
 export default {
   components: {
     Footer,
+  },
+  data() {
+    return {
+      paragraphOne:
+        "As a graduate in the field of Accounting, I embarked on a unique journey driven by my passion and dedication for programming. With a keen interest in the world of coding, I took it upon myself to self-study and eventually enrolled in a rigorous bootcamp to become a full-stack developer. Along the way, I embraced various freelance projects that allowed me to apply and enhance my skills. Today, I find myself thriving in a dynamic role as a full-stack developer at an insurance brokerage company, where I am responsible for managing and maintaining their intricate systems.",
+      paragraphTwo:
+        "My transition from the realm of numbers to the world of programming has been an exciting and fulfilling adventure. While my academic background in Accounting has provided me with a strong foundation in analytical thinking and problem-solving, my passion for programming has allowed me to explore a whole new dimension of creativity and innovation. Through constant learning and practical experience, I have honed my skills in both front-end and back-end development, enabling me to craft comprehensive and efficient solutions for complex business challenges.",
+      paragraphThree:
+        "What truly sets me apart is my ability to merge my financial acumen with my technical expertise. With a deep understanding of accounting principles, I possess a unique perspective when it comes to developing software solutions for financial institutions. By blending my knowledge of the industry's intricacies with my proficiency in programming languages and frameworks, I strive to create robust and user-friendly systems that not only streamline processes but also elevate the overall user experience. With each project I undertake, my goal is to contribute to the success of organizations by providing innovative technological solutions tailored to their specific needs.",
+    };
   },
 };
 </script>
