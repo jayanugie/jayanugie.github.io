@@ -40,7 +40,7 @@
       <!-- FORM -->
       <form
         action=""
-        @submit.prevent="tesPopup"
+        @submit.prevent="sendEmail"
         class="mt-6 grid grid-cols-2 gap-3 text-text-primary"
       >
         <input
