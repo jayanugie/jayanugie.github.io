@@ -1,92 +1,102 @@
 {
   "projects": [
     {
-      "title": "LOREM",
-      "image": "/img/phone.jpg",
-      "description": "LOREM",
-      "text": "LOREM",
-      "link": "https://www.google.com"
+      "title": "Movie App",
+      "image": "/img/projects/movieapp-1.png",
+      "image2": "/img/projects/movieapp-2.png",
+      "description": "Netflix Redesign",
+      "text": "The Netflix Redesign project I worked on was an effort to provide a fresh and more intuitive interface for users. Drawing design inspiration from Behance, I utilized ReactJS and implemented styles using Tailwind CSS. I strived to bring a personal touch and innovation to every detail, continuously refining the project to achieve optimal results. This project is a testament to my dedication in delivering a better viewing experience through creative and responsive design."
+    },
+
+    {
+      "title": "Sayo",
+      "image": "/img/projects/sayo-1.png",
+      "image2": "/img/projects/sayo-2.png",
+      "description": "Company Profil Website",
+      "text": "I am delighted to include my experience in creating a company profile website as one of the projects I have completed. I successfully built a company profile website that clearly and attractively portrayed the company's identity, vision, and mission. In this project, I was responsible for developing the website from scratch to deployment. I also optimized the website's layout to be responsive and compatible across various devices. The end result is a professional website that effectively showcases the company and captures the attention of potential clients and visitors."
     },
     {
-      "title": "IPSUM",
-      "image": "/img/phone.jpg",
-      "description": "IPSUM",
-      "text": "IPSUM",
-      "link": "https://www.google.com"
+      "title": "Weather App",
+      "image": "/img/projects/weathergie-1.png",
+      "image2": "/img/projects/weathergie-2.png",
+      "description": "Real Time Weather Information and Forecasts",
+      "text": "I have successfully developed a weather application using Vue.js, incorporating the OpenWeatherMap API for retrieving weather data. The application's visual design was implemented using Tailwind CSS. With this app, users can conveniently access real-time weather information and forecasts, enabling them to plan their activities and make informed decisions based on accurate weather updates."
+    },
+    {
+      "title": "Kulineran",
+      "image": "/img/projects/kulineran-1.png",
+      "image2": "/img/projects/kulineran-2.png",
+      "description": "Food Ordering App",
+      "text": "Kulineran is a demo food ordering application designed specifically to facilitate customers in ordering their favorite dishes at a restaurant. Built using Vue.js, this application offers an attractive, responsive, and user-friendly interface. Users can easily explore a comprehensive menu with a variety of delicious dishes presented with detailed descriptions and enticing images. Kulineran also provides advanced search functionality, allowing customers to quickly find the dishes they desire based on categories, types of food, or other preferences."
+    },
+    {
+      "title": "Newdaperma",
+      "image": "/img/projects/newdaperma-1.png",
+      "image2": "/img/projects/newdaperma-2.png",
+      "description": "Insurance Broker App",
+      "text": "As part of my responsibilities, I have been entrusted with the maintenance, updates, and bug fixing of an insurance broker application. This application plays a crucial role in facilitating the efficient management of data from various cooperatives. My role involves ensuring the smooth operation of the application, implementing necessary updates to enhance its functionality, and addressing any reported bugs promptly. By diligently maintaining and improving the application, I strive to contribute to the seamless data management process for the cooperatives involved."
     }
   ],
   "stacks": [
     {
       "title": "JavaScript",
       "image": "/img/stacks/javascript.png",
-      "description": "Programming Language",
-      "link": ""
+      "description": "Programming Language"
     },
     {
       "title": "PHP",
       "image": "/img/stacks/php.png",
-      "description": "Programming Language",
-      "link": ""
+      "description": "Programming Language"
     },
     {
       "title": "React",
       "image": "/img/stacks/react.png",
-      "description": " Frontend JavaScript Library",
-      "link": ""
+      "description": " Frontend JavaScript Library"
     },
     {
       "title": "Vue",
       "image": "/img/stacks/vue.png",
-      "description": "Frontend JavaScript Framework",
-      "link": ""
+      "description": "Frontend JavaScript Framework"
     },
     {
       "title": "Express",
       "image": "/img/stacks/express.png",
-      "description": "Backend Framework",
-      "link": ""
+      "description": "Backend Framework"
     },
     {
       "title": "Bootstrap",
       "image": "/img/stacks/bootstrap.png",
-      "description": "CSS Framework",
-      "link": ""
+      "description": "CSS Framework"
     },
     {
       "title": "Tailwind",
       "image": "/img/stacks/tailwind.png",
-      "description": "CSS Framework",
-      "link": ""
+      "description": "CSS Framework"
     },
     {
       "title": "MySQL",
       "image": "/img/stacks/mysql.png",
-      "description": "Database Management System",
-      "link": ""
+      "description": "Database Management System"
     },
     {
       "title": "SQL Server",
       "image": "/img/stacks/sql-server.png",
-      "description": "Database Management System",
-      "link": ""
+      "description": "Database Management System"
     },
     {
       "title": "PostgreSQL",
       "image": "/img/stacks/postgresql.png",
-      "description": "Database Management System",
-      "link": ""
+      "description": "Database Management System"
     },
     {
       "title": "Node",
       "image": "/img/stacks/node.png",
-      "description": "JavaScript Runtime Environment",
-      "link": ""
+      "description": "JavaScript Runtime Environment"
     },
     {
       "title": "Git",
       "image": "/img/stacks/git.png",
-      "description": "Version Control",
-      "link": ""
+      "description": "Version Control"
     }
   ]
 }

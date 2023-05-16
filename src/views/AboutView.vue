@@ -32,7 +32,7 @@
               target="_blank"
               class="flex items-center space-x-1"
             >
-              <img src="/img/mail.png" alt="copy" class="w-5 h-5" />
+              <img src="/img/icon/mail.png" alt="copy" class="w-5 h-5" />
               <span>Email</span>
             </a>
           </button>

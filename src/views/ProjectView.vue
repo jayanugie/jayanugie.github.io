@@ -43,11 +43,22 @@
         <p class="text-text-primary text-4xl font-semibold">
           {{ project.title }}
         </p>
-        <img :src="project.image" alt="nugie" class="h-96 rounded-lg" />
+        <img
+          :src="project.image"
+          :alt="project.title"
+          class="h-60 w-full rounded-lg object-cover"
+        />
         <p class="text-text-secondary text-sm">
           {{ project.text }}
         </p>
-        <div class="font-medium text-text-primary">
+
+        <img
+          :src="project.image2"
+          :alt="project.title"
+          class="h-60 w-full rounded-lg object-cover"
+        />
+
+        <!-- <div class="font-medium text-text-primary">
           <a
             target="_blank"
             :href="project.link"
@@ -55,7 +66,7 @@
           >
             Look Project
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
     <Footer />
@@ -63,8 +74,8 @@
 </template>
 
 <script>
-import axios from "axios";
 import Footer from "../components/Footer.vue";
+import { projects } from "../../db/db.json";
 
 export default {
   components: {
@@ -76,16 +87,9 @@ export default {
     };
   },
   mounted() {
-    axios
-      .get("../../db/db.json")
-      .then((res) => {
-        this.project = res.data.projects.find(
-          (project) => project.title === this.$route.params.title
-        );
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    this.project = projects.find(
+      (project) => project.title === this.$route.params.title
+    );
   },
 };
 </script>

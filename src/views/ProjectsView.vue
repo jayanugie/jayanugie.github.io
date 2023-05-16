@@ -4,9 +4,7 @@
       <!-- TITLE -->
       <div class="text-text-primary space-y-6">
         <p class="text-4xl font-semibold">Projects</p>
-        <p class="font-medium">
-          Partnered with inspiring collaborators, innovators and brands.
-        </p>
+        <p class="font-medium">Here are some views of my coding.</p>
       </div>
 
       <!-- PROJECTS -->
@@ -20,12 +18,12 @@
         >
           <img
             :src="project.image"
-            alt="phone"
+            :alt="project.title"
             class="md:w-56 w-32 rounded-lg object-cover"
           />
           <div class="text-sm ml-4 space-y-2">
             <p class="text-text-primary font-medium">{{ project.title }}</p>
-            <p class="text-text-secondary">{{ project.description }}.</p>
+            <p class="text-text-secondary">{{ project.description }}</p>
           </div>
         </router-link>
       </div>
@@ -36,7 +34,7 @@
 
 <script>
 import Footer from "../components/Footer.vue";
-import axios from "axios";
+import { projects } from "../../db/db.json";
 
 export default {
   components: {
@@ -48,14 +46,7 @@ export default {
     };
   },
   mounted() {
-    axios
-      .get("../../db/db.json")
-      .then((res) => {
-        this.projects = res.data.projects;
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    this.projects = projects;
   },
 };
 </script>

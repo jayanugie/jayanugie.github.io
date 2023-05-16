@@ -17,7 +17,7 @@
               target="_blank"
               class="flex items-center space-x-1"
             >
-              <img src="/img/whatsapp.png" class="w-5" alt="whatsapp" />
+              <img src="/img/icon/whatsapp.png" class="w-5" alt="whatsapp" />
               <span>WhatsApp</span>
             </a>
           </button>
@@ -29,7 +29,7 @@
               target="_blank"
               class="flex items-center space-x-1"
             >
-              <img src="/img/mail.png" alt="email" class="w-5 h-5" />
+              <img src="/img/icon/mail.png" alt="email" class="w-5 h-5" />
               <span>Email</span>
             </a>
           </button>
@@ -40,7 +40,7 @@
       <!-- FORM -->
       <form
         action=""
-        @submit.prevent="sendEmail"
+        @submit.prevent="tesPopup"
         class="mt-6 grid grid-cols-2 gap-3 text-text-primary"
       >
         <input
@@ -71,21 +71,19 @@
           {{ submitText }}
         </button>
       </form>
-      <Transition name="fade" appear>
-        <div v-if="showSuccess" class="popup">
-          <div class="popup-content sm:ml-64 rounded-lg space-y">
-            <p class="text-xl font-bold">Message sent successfully!</p>
-            <p class="mb-4">Your message will be followed up soon.</p>
-            <hr />
-            <button
-              class="mt-4 border border-bg-navbar px-2 rounded-md hover:bg-bg-navbar hover:text-text-primary transition duration-300"
-              @click="closePopup"
-            >
-              Close
-            </button>
-          </div>
+      <div v-if="showSuccess" class="popup">
+        <div class="popup-content sm:ml-64 rounded-lg space-y">
+          <p class="text-xl font-bold">Message sent successfully!</p>
+          <p class="mb-4">Your message will be followed up soon.</p>
+          <hr />
+          <button
+            class="mt-4 border border-bg-navbar px-2 rounded-md hover:bg-bg-navbar hover:text-text-primary transition duration-300"
+            @click="closePopup"
+          >
+            Close
+          </button>
         </div>
-      </Transition>
+      </div>
     </div>
     <Footer />
   </div>

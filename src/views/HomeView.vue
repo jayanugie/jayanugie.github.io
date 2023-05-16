@@ -25,7 +25,7 @@
               target="_blank"
               class="flex items-center space-x-1"
             >
-              <img src="/img/mail.png" alt="email" class="w-5 h-5" />
+              <img src="/img/icon/mail.png" alt="email" class="w-5 h-5" />
               <span>Email</span>
             </a>
           </button>
@@ -37,10 +37,11 @@
         <p class="text-text-primary font-medium p-1">Projects</p>
 
         <!-- loop what's new -->
-        <div
-          v-for="item in projects"
+        <router-link
+          v-for="item in filteredProjects"
           :key="item.title"
           class="flex md:p-3 p-2 rounded-lg hover:bg-hover-navbar transition-all"
+          :to="'/projects/' + item.title"
         >
           <img
             :src="item.image"
@@ -51,7 +52,7 @@
             <p class="text-text-primary font-medium">{{ item.title }}</p>
             <p class="text-text-secondary">{{ item.description }}</p>
           </div>
-        </div>
+        </router-link>
       </div>
 
       <!-- STACK -->
@@ -141,6 +142,9 @@ export default {
   computed: {
     filteredStacks() {
       return this.stacks.slice(0, 3);
+    },
+    filteredProjects() {
+      return this.projects.slice(0, 3);
     },
   },
 };
