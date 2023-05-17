@@ -35,8 +35,8 @@
             class="flex items-center p-2 text-base font-medium text-text-secondary rounded-lg hover:text-text-primary"
           >
             <img
-              src="/img/nugie.jpg"
-              class="flex-shrink-0 w-8 h-8 rounded-full object-cover"
+              src="/img/nugie.png"
+              class="flex-shrink-0 w-12 h-12 rounded-full object-cover"
               xmlns="http://www.w3.org/2000/svg"
             />
             <div class="ml-3">

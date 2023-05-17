@@ -7,13 +7,13 @@
         <p class="font-medium text-text-primary">
           Web Developer at IT consulting company who loves code.
         </p>
-        <div class="min-h-[384px]">
+        <div class="md:min-h-[384px] min-h-[240px]">
           <Transition name="fade">
             <img
               v-show="contentLoaded"
-              src="/img/nugie.jpg"
+              src="/img/work.png"
               alt="nugie"
-              class="h-96 rounded-lg object-cover"
+              class="md:h-96 h-60 rounded-lg object-cover"
             />
           </Transition>
         </div>
