@@ -5,6 +5,7 @@ import ContactView from "../views/ContactView.vue";
 import ProjectsView from "../views/ProjectsView.vue";
 import StackView from "../views/StackView.vue";
 import ProjectView from "../views/ProjectView.vue";
+import NotFoundView from "../views/NotFoundView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: "/stack",
       name: "stack",
       component: StackView,
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "notfound",
+      component: NotFoundView,
     },
   ],
 });
