@@ -5,7 +5,7 @@
       "image": "/img/projects/movieapp-1.png",
       "image2": "/img/projects/movieapp-2.png",
       "description": "Netflix Redesign",
-      "text": "The Netflix Redesign project I worked on was an effort to provide a fresh and more intuitive interface for users. Drawing design inspiration from Behance, I utilized ReactJS and implemented styles using Tailwind CSS. I strived to bring a personal touch and innovation to every detail, continuously refining the project to achieve optimal results. This project is a testament to my dedication in delivering a better viewing experience through creative and responsive design."
+      "text": "The Netflix Redesign project I worked on was an effort to provide a fresh and more intuitive interface for users. Drawing design inspiration from Behance, I utilized ReactJS and implemented styles using Tailwind CSS. In addition, I also integrated a list of movies into the project using the API from TMDb (The Movie Database). I strived to bring a personal touch and innovation to every detail, continuously refining the project to achieve optimal results. This project is a testament to my dedication in delivering a better viewing experience through creative and responsive design."
     },
 
     {

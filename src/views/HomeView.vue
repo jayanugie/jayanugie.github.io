@@ -33,26 +33,30 @@
       </div>
 
       <!-- PROJECTS -->
-      <div class="mt-12 space-y-4">
+      <div class="mt-12 space-y-4 md:min-h-[430px] min-h-[300px]">
         <p class="text-text-primary font-medium p-1">Projects</p>
 
         <!-- loop what's new -->
-        <router-link
-          v-for="item in filteredProjects"
-          :key="item.title"
-          class="flex md:p-3 p-2 rounded-lg hover:bg-hover-navbar transition-all"
-          :to="'/projects/' + item.title"
-        >
-          <img
-            :src="item.image"
-            :alt="item.title"
-            class="md:w-56 w-32 rounded-lg object-cover"
-          />
-          <div class="text-sm ml-4 space-y-2">
-            <p class="text-text-primary font-medium">{{ item.title }}</p>
-            <p class="text-text-secondary">{{ item.description }}</p>
+        <Transition name="fade">
+          <div v-show="contentLoaded">
+            <router-link
+              v-for="item in filteredProjects"
+              :key="item.title"
+              class="flex md:p-3 p-2 rounded-lg hover:bg-hover-navbar transition-all"
+              :to="'/projects/' + item.title"
+            >
+              <img
+                :src="item.image"
+                :alt="item.title"
+                class="md:w-56 w-32 rounded-lg object-cover"
+              />
+              <div class="text-sm ml-4 space-y-2">
+                <p class="text-text-primary font-medium">{{ item.title }}</p>
+                <p class="text-text-secondary">{{ item.description }}</p>
+              </div>
+            </router-link>
           </div>
-        </router-link>
+        </Transition>
       </div>
 
       <!-- STACK -->
@@ -133,11 +137,15 @@ export default {
     return {
       projects: [],
       stacks: [],
+      contentLoaded: false,
     };
   },
   mounted() {
     this.projects = projects;
     this.stacks = stacks;
+    setTimeout(() => {
+      this.contentLoaded = true;
+    }, 200);
   },
   computed: {
     filteredStacks() {

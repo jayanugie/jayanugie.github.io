@@ -1,6 +1,6 @@
 <template>
   <div class="sm:ml-64">
-    <div class="xl:px-80 lg:px-32 md:px-28 px-10 md:pt-24 pt-10 min-h-[80vh]">
+    <div class="xl:px-80 lg:px-32 md:px-28 px-10 md:pt-24 pt-10 min-h-screen">
       <!-- TITLE -->
       <div class="text-text-primary space-y-6">
         <p class="text-4xl font-semibold">Contact</p>
@@ -36,41 +36,47 @@
         </div>
       </div>
 
-      <p class="text-text-primary font-medium mt-12 text-lg">Send a message</p>
-      <!-- FORM -->
-      <form
-        action=""
-        @submit.prevent="sendEmail"
-        class="mt-6 grid grid-cols-2 gap-3 text-text-primary"
-      >
-        <input
-          type="text"
-          class="rounded-lg bg-bg-navbar border-none focus:ring-0 placeholder:text-text-secondary text-sm"
-          placeholder="Name"
-          v-model="name"
-          required
-        />
-        <input
-          type="text"
-          class="rounded-lg bg-bg-navbar border-none focus:ring-0 placeholder:text-text-secondary text-sm"
-          placeholder="Your Email"
-          v-model="email"
-          required
-        />
-        <textarea
-          type="text"
-          class="col-span-2 rounded-lg bg-bg-navbar border-none focus:ring-0 placeholder:text-text-secondary text-sm h-40"
-          placeholder="Message"
-          v-model="message"
-          required
-        />
-        <button
-          type="submit"
-          class="p-2 col-span-2 rounded-lg font-medium bg-bg-navbar border-none focus:ring-0"
-        >
-          {{ submitText }}
-        </button>
-      </form>
+      <Transition name="fade">
+        <div v-show="contentLoaded">
+          <p class="text-text-primary font-medium mt-12 text-lg">
+            Send a message
+          </p>
+          <!-- FORM -->
+          <form
+            action=""
+            @submit.prevent="sendEmail"
+            class="mt-6 grid grid-cols-2 gap-3 text-text-primary"
+          >
+            <input
+              type="text"
+              class="rounded-lg bg-bg-navbar border-none focus:ring-0 placeholder:text-text-secondary text-sm"
+              placeholder="Name"
+              v-model="name"
+              required
+            />
+            <input
+              type="text"
+              class="rounded-lg bg-bg-navbar border-none focus:ring-0 placeholder:text-text-secondary text-sm"
+              placeholder="Your Email"
+              v-model="email"
+              required
+            />
+            <textarea
+              type="text"
+              class="col-span-2 rounded-lg bg-bg-navbar border-none focus:ring-0 placeholder:text-text-secondary text-sm h-40"
+              placeholder="Message"
+              v-model="message"
+              required
+            />
+            <button
+              type="submit"
+              class="p-2 col-span-2 rounded-lg font-medium bg-bg-navbar border-none focus:ring-0"
+            >
+              {{ submitText }}
+            </button>
+          </form>
+        </div>
+      </Transition>
       <div v-if="showSuccess" class="popup">
         <div class="popup-content sm:ml-64 rounded-lg space-y">
           <p class="text-xl font-bold">Message sent successfully!</p>
@@ -104,7 +110,13 @@ export default {
       message: "",
       submitText: "Send now",
       showSuccess: false,
+      contentLoaded: false,
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.contentLoaded = true;
+    }, 200);
   },
   methods: {
     sendEmail() {
@@ -139,23 +151,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-}
-</style>

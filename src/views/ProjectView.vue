@@ -43,20 +43,30 @@
         <p class="text-text-primary text-4xl font-semibold">
           {{ project.title }}
         </p>
-        <img
-          :src="project.image"
-          :alt="project.title"
-          class="h-60 w-full rounded-lg object-cover"
-        />
+        <div class="min-h-[240px]">
+          <Transition name="fade">
+            <img
+              v-show="contentLoaded"
+              :src="project.image"
+              :alt="project.title"
+              class="h-60 w-full rounded-lg object-cover"
+            />
+          </Transition>
+        </div>
         <p class="text-text-secondary text-sm">
           {{ project.text }}
         </p>
 
-        <img
-          :src="project.image2"
-          :alt="project.title"
-          class="h-60 w-full rounded-lg object-cover"
-        />
+        <div class="min-h-[240px]">
+          <Transition name="fade">
+            <img
+              v-show="contentLoaded"
+              :src="project.image2"
+              :alt="project.title"
+              class="h-60 w-full rounded-lg object-cover"
+            />
+          </Transition>
+        </div>
 
         <!-- <div class="font-medium text-text-primary">
           <a
@@ -84,12 +94,16 @@ export default {
   data() {
     return {
       project: {},
+      contentLoaded: false,
     };
   },
   mounted() {
     this.project = projects.find(
       (project) => project.title === this.$route.params.title
     );
+    setTimeout(() => {
+      this.contentLoaded = true;
+    }, 200);
   },
 };
 </script>

@@ -7,7 +7,16 @@
         <p class="font-medium text-text-primary">
           Web Developer at IT consulting company who loves code.
         </p>
-        <img src="/img/nugie.jpg" alt="nugie" class="h-96 rounded-lg" />
+        <div class="min-h-[384px]">
+          <Transition name="fade">
+            <img
+              v-show="contentLoaded"
+              src="/img/nugie.jpg"
+              alt="nugie"
+              class="h-96 rounded-lg object-cover"
+            />
+          </Transition>
+        </div>
         <p class="text-text-secondary text-sm">
           {{ paragraphOne }}
         </p>
@@ -58,7 +67,13 @@ export default {
         "My transition from the realm of numbers to the world of programming has been an exciting and fulfilling adventure. While my academic background in Accounting has provided me with a strong foundation in analytical thinking and problem-solving, my passion for programming has allowed me to explore a whole new dimension of creativity and innovation. Through constant learning and practical experience, I have honed my skills in both front-end and back-end development, enabling me to craft comprehensive and efficient solutions for complex business challenges.",
       paragraphThree:
         "What truly sets me apart is my ability to merge my financial acumen with my technical expertise. With a deep understanding of accounting principles, I possess a unique perspective when it comes to developing software solutions for financial institutions. By blending my knowledge of the industry's intricacies with my proficiency in programming languages and frameworks, I strive to create robust and user-friendly systems that not only streamline processes but also elevate the overall user experience. With each project I undertake, my goal is to contribute to the success of organizations by providing innovative technological solutions tailored to their specific needs.",
+      contentLoaded: false,
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.contentLoaded = true;
+    }, 200);
   },
 };
 </script>
