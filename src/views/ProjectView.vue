@@ -43,13 +43,13 @@
         <p class="text-text-primary text-4xl font-semibold">
           {{ project.title }}
         </p>
-        <div class="min-h-[240px]">
+        <div class="md:min-h-[240px] min-h-[160px]">
           <Transition name="fade">
             <img
               v-show="contentLoaded"
               :src="project.image"
               :alt="project.title"
-              class="h-60 w-full rounded-lg object-cover"
+              class="md:h-60 h-40 w-full rounded-lg object-cover"
             />
           </Transition>
         </div>
@@ -57,13 +57,13 @@
           {{ project.text }}
         </p>
 
-        <div class="min-h-[240px]">
+        <div class="md:min-h-[240px] min-h-[160px]">
           <Transition name="fade">
             <img
               v-show="contentLoaded"
               :src="project.image2"
               :alt="project.title"
-              class="h-60 w-full rounded-lg object-cover"
+              class="md:h-60 h-40 w-full rounded-lg object-cover"
             />
           </Transition>
         </div>
